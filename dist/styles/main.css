@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 10px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.collapsible-tabs {
+  width: 800px;
+  margin: 0 auto;
+}
+.collapsible-tabs .tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.collapsible-tabs .tabs > li {
+  background: none;
+  color: #222;
+  float: left;
+  display: block;
+  cursor: pointer;
+}
+.collapsible-tabs .tabs > li > a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #222;
+}
+.collapsible-tabs .tabs > li > a .collapse-icon, .collapsible-tabs .tabs > li > a .expand-icon {
+  float: right;
+  display: none;
+}
+.collapsible-tabs .tabs > li.active a {
+  background: #ededed;
+  color: #222;
+  font-weight: bold;
+}
+.collapsible-tabs .tabs > li.active a .collapse-icon {
+  display: inline-block;
+}
+.collapsible-tabs .tabs > li.collapsed a .collapse-icon {
+  display: none;
+}
+.collapsible-tabs .tabs > li.collapsed a .expand-icon {
+  display: inline-block;
+}
+.collapsible-tabs .tab-content {
+  display: none;
+  background: #ededed;
+  padding: 15px;
+  clear: both;
+}
+.collapsible-tabs .tab-content.active {
+  display: inherit;
+}
+.collapsible-tabs .tab-content.collapsed {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

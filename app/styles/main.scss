@@ -1,0 +1,87 @@
+// bower:scss
+// endbower
+$border: #ccc;
+$text: #222;
+$background: #ededed;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 10px;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.collapsible-tabs {
+  width: 800px;
+  margin: 0 auto;
+  .tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    & > li {
+      background: none;
+      color: $text;
+      float: left;
+      display: block;
+      cursor: pointer;
+
+      & > a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: $text;
+
+        .collapse-icon, .expand-icon {
+          float: right;
+          display: none;
+        }
+      }
+      &.active {
+        a {
+          background: $background;
+          color: $text;
+          font-weight: bold;
+
+          .collapse-icon {
+            display: inline-block;
+          }
+        }
+      }
+      &.collapsed {
+        a {
+          .collapse-icon {
+            display: none;
+          }
+          .expand-icon {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+    background: $background;
+    padding: 15px;
+    clear: both;
+    &.active {
+      display: inherit;
+    }
+    &.collapsed {
+      display: none;
+    }
+  }
+}
